@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../asset/index.css">
+
+    <script src="../dist/main.js"> </script>
+    <!-- <script src="../src/index.js"> </script> -->
+
+    <!-- <script src="index.mjs" type="module"></script> -->
+    <title>FoodUp</title>
+</head>
+<body>
+
+    <div class="container">
+        <img class="image" id="ean-code-image" src="../asset/ean_code_1.png" alt="ean_code">
+        <input type="file" id="ean-code-file" accept="image/*" onchange="displayEanCode(this)">
+        <button class ="btn" id="getIt"  onclick="getIt(document.getElementById('ean-code-file'))">get it !</button>
+    </div>
+    
+</body>
+</html>
